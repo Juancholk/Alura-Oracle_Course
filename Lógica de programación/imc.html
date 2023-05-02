@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>Calculando en IMC</h1><br><br>
+<script>
+    function print(text){
+        document.write(text);
+        saltarlinea(); 
+    }
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function calcularImc(altura, peso){
+        imc = peso / (altura*altura);
+        return imc;
+    }
+    /*
+    imcJuan = calcularImc("Juan", 1.81, 78);
+    imcDani = calcularImc("Dani", 1.54, 50);
+    
+    print("El imc de Dani es "+imcDani)
+    promedioImc= (imcJuan+imcDani)/2
+
+    print("El promedio de indice de masa corporal es " + promedioImc)
+    */
+    name = prompt("Cuál es su nombre?")
+    peso = prompt("Informe su peso: ")
+    altura= prompt("Informe su altura: ")
+    alert(name + " su Imc es de: " +calcularImc(altura,peso));
+</script>

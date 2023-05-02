@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<h1>Estoy definiendo la edad</h1><br><br>
+<script>
+    //alert("La edad de juan es...")
+    //alert("?")
+    /*document.write("La edad de Juan es...")
+    document.write("<br>")
+    document.write("?")
+    document.write("<br>")
+    document.write(2023-22)
+    
+    document.write("La suma de las edades de Juan, Pedro y Luis es: ");
+    document.write("<br>");
+    document.write((25+20+15));
+
+
+    document.write("<h1>Sea bienvenido</h1>");
+    */
+    function print(text){
+        document.write("<h1>");
+        document.write(text);
+        document.write("</h1>")
+        document.write("<big>");
+        document.write(text);
+        document.write("</big>")
+        //document.write("<big>" + text + "</big>");
+        
+        saltarlinea();
+        
+    }
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    var saltolinea = "<br>"
+    var jedad = 25;
+    var pedad = 20;
+    var ledad = 15;
+    f_actual = 2023;
+    print("Juan tiene "+(f_actual-jedad)+" años");
+    
+    print("Pedro tiene "+(f_actual-pedad)+" años");
+    
+    print("Luis tiene "+(f_actual-ledad)+" años");
+
+    
+    promedio = (jedad+pedad+ledad)/3
+
+    var nombre1 = "Juan";
+    var nombre2 = "Pedro";
+    var nombre3 = "Luis";
+    print("El promedio de la edad de: "+nombre1+", "+nombre2+", "+nombre3+ " es " + Math.round(promedio,2))
+</script>
